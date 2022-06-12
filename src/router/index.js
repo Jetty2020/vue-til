@@ -15,6 +15,15 @@ const routes = [
     name: 'signup',
     component: () => import('@/views/SignupPage.vue'),
   },
+  {
+    path: '/404',
+    name: 'NotFound',
+    component: () => import('@/views/NotFoundPage.vue'),
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/404',
+  },
 ];
 
 const router = createRouter({
