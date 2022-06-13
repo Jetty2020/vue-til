@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Main page</h1>
+  <div class="main list-container contents">
+    <h1 class="page-header">Today I Learned</h1>
   </div>
 </template>
 
