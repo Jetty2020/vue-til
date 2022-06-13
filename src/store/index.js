@@ -13,6 +13,9 @@ export default createStore({
     setUsername(state, username) {
       state.username = username;
     },
+    clearUsername(state) {
+      state.username = '';
+    },
   },
   actions: {},
   modules: {},
