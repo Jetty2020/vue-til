@@ -3,6 +3,7 @@ import { createStore } from 'vuex';
 export default createStore({
   state: {
     username: '',
+    token: '',
   },
   getters: {
     isLogin(state) {
@@ -15,6 +16,9 @@ export default createStore({
     },
     clearUsername(state) {
       state.username = '';
+    },
+    setToken(state, token) {
+      state.token = token;
     },
   },
   actions: {},
