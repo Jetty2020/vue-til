@@ -16,6 +16,11 @@ const routes = [
     component: () => import('@/views/SignupPage.vue'),
   },
   {
+    path: '/main',
+    name: 'main',
+    component: () => import('@/views/MainPage.vue'),
+  },
+  {
     path: '/404',
     name: 'NotFound',
     component: () => import('@/views/NotFoundPage.vue'),
