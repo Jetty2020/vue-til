@@ -21,6 +21,11 @@ const routes = [
     component: () => import('@/views/MainPage.vue'),
   },
   {
+    path: '/add',
+    name: 'add',
+    component: () => import('@/views/PostAddPage.vue'),
+  },
+  {
     path: '/404',
     name: 'NotFound',
     component: () => import('@/views/NotFoundPage.vue'),
