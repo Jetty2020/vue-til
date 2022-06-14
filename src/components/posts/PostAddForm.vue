@@ -29,11 +29,15 @@ export default {
   },
   methods: {
     async submitForm() {
-      const res = await createPost({
-        title: this.title,
-        constents: this.constents,
-      });
-      console.log(res);
+      try {
+        const res = await createPost({
+          title: this.title,
+          constents: this.constents,
+        });
+        console.log(res);
+      } catch (error) {
+        console.warn(error);
+      }
     },
   },
 };
