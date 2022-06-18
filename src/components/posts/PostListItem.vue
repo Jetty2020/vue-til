@@ -7,7 +7,7 @@
             {{ postItem.contents }}
         </div>
         <div class="post-time">
-            {{ postItem.createdAt }}
+            {{ formatedDate }}
             <i class="icon ion-md-create" @click="routeEditPage"></i>
             <i class="icon ion-md-trash" @click="deleteItem"></i>
         </div>
@@ -16,12 +16,18 @@
 
 <script>
 import {deletePost} from '@/api/posts';
+import {formatDate} from '@/utils/filters';
 
 export default {
     props: {
         postItem: {
             type: Object,
             required: true,
+        },
+    },
+    computed: {
+        formatedDate() {
+            return formatDate(this.postItem.createdAt);
         },
     },
     methods: {
