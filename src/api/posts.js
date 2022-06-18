@@ -16,4 +16,8 @@ function deletePost(postId) {
     return posts.delete(postId);
 }
 
-export {fetchPosts, fetchPost, createPost, deletePost};
+function editPost(postId, postData) {
+    return posts.put(postId, postData);
+}
+
+export {fetchPosts, fetchPost, createPost, deletePost, editPost};

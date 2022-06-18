@@ -51,6 +51,7 @@ export default {
                     title: this.title,
                     contents: this.contents,
                 });
+                this.$router.push('/main');
                 console.log(res);
             } catch (error) {
                 console.warn(error);
