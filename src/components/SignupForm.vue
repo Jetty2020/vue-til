@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { registerUser } from '@/api';
+import { registerUser } from '@/api/auth';
 
 export default {
   data() {
